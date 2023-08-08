@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D7871D32A82E9F700CF9642 /* Roman_To_IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7871D22A82E9F700CF9642 /* Roman_To_IntTests.swift */; };
 		8DAD94F12A3CC8CD004C95AD /* Roman_To_IntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD94F02A3CC8CD004C95AD /* Roman_To_IntApp.swift */; };
 		8DAD94F32A3CC8CD004C95AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD94F22A3CC8CD004C95AD /* ContentView.swift */; };
 		8DAD94F52A3CC8CE004C95AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD94F42A3CC8CE004C95AD /* Assets.xcassets */; };
@@ -14,7 +15,19 @@
 		8DAD94FF2A3CCD1F004C95AD /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD94FE2A3CCD1F004C95AD /* ContentViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8D7871D42A82E9F700CF9642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DAD94E52A3CC8CD004C95AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DAD94EC2A3CC8CD004C95AD;
+			remoteInfo = "Roman To Int";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8D7871D02A82E9F700CF9642 /* Roman To IntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roman To IntTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7871D22A82E9F700CF9642 /* Roman_To_IntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roman_To_IntTests.swift; sourceTree = "<group>"; };
 		8DAD94ED2A3CC8CD004C95AD /* Roman To Int.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roman To Int.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAD94F02A3CC8CD004C95AD /* Roman_To_IntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roman_To_IntApp.swift; sourceTree = "<group>"; };
 		8DAD94F22A3CC8CD004C95AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D7871CD2A82E9F700CF9642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DAD94EA2A3CC8CD004C95AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D7871D12A82E9F700CF9642 /* Roman To IntTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D7871D22A82E9F700CF9642 /* Roman_To_IntTests.swift */,
+			);
+			path = "Roman To IntTests";
+			sourceTree = "<group>";
+		};
 		8DAD94E42A3CC8CD004C95AD = {
 			isa = PBXGroup;
 			children = (
 				8DAD94EF2A3CC8CD004C95AD /* Roman To Int */,
+				8D7871D12A82E9F700CF9642 /* Roman To IntTests */,
 				8DAD94EE2A3CC8CD004C95AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				8DAD94ED2A3CC8CD004C95AD /* Roman To Int.app */,
+				8D7871D02A82E9F700CF9642 /* Roman To IntTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +103,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8D7871CF2A82E9F700CF9642 /* Roman To IntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D7871D82A82E9F700CF9642 /* Build configuration list for PBXNativeTarget "Roman To IntTests" */;
+			buildPhases = (
+				8D7871CC2A82E9F700CF9642 /* Sources */,
+				8D7871CD2A82E9F700CF9642 /* Frameworks */,
+				8D7871CE2A82E9F700CF9642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D7871D52A82E9F700CF9642 /* PBXTargetDependency */,
+			);
+			name = "Roman To IntTests";
+			productName = "Roman To IntTests";
+			productReference = 8D7871D02A82E9F700CF9642 /* Roman To IntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DAD94EC2A3CC8CD004C95AD /* Roman To Int */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DAD94FB2A3CC8CE004C95AD /* Build configuration list for PBXNativeTarget "Roman To Int" */;
@@ -100,6 +148,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					8D7871CF2A82E9F700CF9642 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8DAD94EC2A3CC8CD004C95AD;
+					};
 					8DAD94EC2A3CC8CD004C95AD = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -119,11 +171,19 @@
 			projectRoot = "";
 			targets = (
 				8DAD94EC2A3CC8CD004C95AD /* Roman To Int */,
+				8D7871CF2A82E9F700CF9642 /* Roman To IntTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8D7871CE2A82E9F700CF9642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DAD94EB2A3CC8CD004C95AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8D7871CC2A82E9F700CF9642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7871D32A82E9F700CF9642 /* Roman_To_IntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DAD94E92A3CC8CD004C95AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +216,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8D7871D52A82E9F700CF9642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DAD94EC2A3CC8CD004C95AD /* Roman To Int */;
+			targetProxy = 8D7871D42A82E9F700CF9642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8D7871D62A82E9F700CF9642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F4JNBYPV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Roman-To-IntTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman To Int.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roman To Int";
+			};
+			name = Debug;
+		};
+		8D7871D72A82E9F700CF9642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F4JNBYPV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Roman-To-IntTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman To Int.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roman To Int";
+			};
+			name = Release;
+		};
 		8DAD94F92A3CC8CE004C95AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +436,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D7871D82A82E9F700CF9642 /* Build configuration list for PBXNativeTarget "Roman To IntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7871D62A82E9F700CF9642 /* Debug */,
+				8D7871D72A82E9F700CF9642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8DAD94E82A3CC8CD004C95AD /* Build configuration list for PBXProject "Roman To Int" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
