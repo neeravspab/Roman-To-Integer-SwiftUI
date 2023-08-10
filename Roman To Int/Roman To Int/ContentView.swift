@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var romanTextfield: String = ""
     @State private var isAlertShow = false
+    @State private var integerNumber: Int? = nil
     @ObservedObject private var viewmodel = ContentViewViewModel()
     
     var body: some View {
@@ -79,10 +80,10 @@ struct ContentView: View {
                         .padding(.top, 8)
                     }
                     Spacer()
-                    if romanTextfield.isEmpty || viewmodel.romanNumber.isEmpty {
+                    if romanTextfield.isEmpty || integerNumber == nil {
                         Text("")
                     } else {
-                        Text("Integer number is \(viewmodel.romanNumber)")
+                        Text("Integer number is \(integerNumber ?? 0)")
                             .font(.headline)
                     }
                 }
@@ -92,9 +93,9 @@ struct ContentView: View {
     }
     
     func findNumberfromRoman() {
-        if !romanTextfield.isEmpty {
+        if !romanTextfield.isEmpty && viewmodel.error.isEmpty {
             isAlertShow = false
-            viewmodel.convertRomanToInteger(romanTextfield.uppercased())
+            integerNumber = viewmodel.convertRomanToInteger(romanTextfield.uppercased())
         } else {
             isAlertShow = true
         }
